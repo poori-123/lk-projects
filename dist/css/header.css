@@ -181,3 +181,86 @@
             text-align: center;
             line-height: 50px;
             color: #a4a4a4; }
+
+.searchWrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 74px; }
+  .searchWrap h1 {
+    float: left; }
+  .searchWrap ul {
+    float: left;
+    margin-left: 45px;
+    height: 74px; }
+    .searchWrap ul li {
+      float: left;
+      margin-right: 25px; }
+      .searchWrap ul li a {
+        display: block;
+        font-size: 15px;
+        color: #333333;
+        line-height: 74px; }
+        .searchWrap ul li a:hover {
+          color: #cb242b; }
+      .searchWrap ul li .huawei {
+        width: 74px;
+        line-height: 24px;
+        background: #ff8486;
+        text-align: center;
+        border-radius: 12px;
+        color: #fff;
+        margin-top: 25px; }
+        .searchWrap ul li .huawei:hover {
+          background: #ff9d9e;
+          color: #fff; }
+      .searchWrap ul li .rongyao {
+        width: 74px;
+        line-height: 24px;
+        background: #74c7ff;
+        text-align: center;
+        border-radius: 12px;
+        color: #fff;
+        margin-top: 25px; }
+        .searchWrap ul li .rongyao:hover {
+          background: #90d2ff;
+          color: #fff; }
+  .searchWrap .form {
+    float: right;
+    width: 210px;
+    padding: 5px 15px;
+    height: 20px;
+    border-radius: 14px;
+    border: 1px solid #fff;
+    background: #f0f0f0;
+    position: relative;
+    margin-top: 19px; }
+    .searchWrap .form:hover {
+      border-color: #c9c9c9; }
+    .searchWrap .form .txtinp {
+      float: left;
+      line-height: 20px;
+      border: 0;
+      background: transparent;
+      padding: 0; }
+    .searchWrap .form a {
+      position: absolute;
+      top: 0;
+      font-size: 12px;
+      color: #999999;
+      display: block;
+      line-height: 30px; }
+      .searchWrap .form a:hover {
+        color: #333; }
+    .searchWrap .form .a1 {
+      left: 100px; }
+    .searchWrap .form .a2 {
+      left: 160px; }
+    .searchWrap .form .btn {
+      width: 15px;
+      height: 30px;
+      margin-top: -5px;
+      float: right;
+      border: 0;
+      background: url(../img/searchicon1.png) no-repeat 0 8px;
+      padding: 0;
+      cursor: pointer; }

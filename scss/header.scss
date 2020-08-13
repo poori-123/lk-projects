@@ -252,3 +252,104 @@
         }
     }
 }
+.searchWrap{
+    width: 1200px;
+    margin: 0 auto;
+    height: 74px;
+    h1{
+        float: left;
+    }
+    ul{
+        float: left;
+        margin-left: 45px;
+        height: 74px;
+        li{
+            float: left;
+            margin-right: 25px;
+            a{
+                display: block;
+                font-size: 15px;
+                color: #333333;
+                line-height: 74px;
+                &:hover{
+                    color: #cb242b;
+                }
+            }
+            .huawei{
+                width: 74px;
+                line-height: 24px;
+                background: #ff8486;
+                text-align: center;
+                border-radius: 12px;
+                color: #fff;
+                margin-top: 25px;
+                &:hover{
+                    background: #ff9d9e;
+                    color: #fff;
+                }
+            }
+            .rongyao{
+                width: 74px;
+                line-height: 24px;
+                background: #74c7ff;
+                text-align: center;
+                border-radius: 12px;
+                color: #fff;
+                margin-top: 25px;
+                &:hover{
+                    background: #90d2ff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .form{
+        float: right;
+        width: 210px;
+        padding: 5px 15px;
+        height: 20px;
+        border-radius: 14px;
+        border: 1px solid #fff;
+        background: #f0f0f0;
+        position: relative;
+        margin-top: 19px;
+        &:hover{
+            border-color: #c9c9c9;
+        }
+        .txtinp{
+             float: left;
+             line-height: 20px;
+             border: 0;
+             background: transparent;
+             padding: 0;
+        }
+        a{
+            position: absolute;
+            top: 0;
+            font-size: 12px;
+            color: #999999;
+            display: block;
+            line-height: 30px;
+            &:hover{
+                color: #333;
+            }
+        }
+        .a1{
+            left: 100px;
+        }
+        .a2{
+            left: 160px;
+        }
+        .btn{
+            width: 15px;
+            height: 30px;
+            margin-top: -5px;
+            float: right;
+            border: 0;
+            background: url(../img/searchicon1.png) no-repeat 0 8px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+    }
+}
