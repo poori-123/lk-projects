@@ -39,12 +39,20 @@ task('html', async ()=>{
   .pipe(load.connect.reload())
 })
 
+// 处理data
+task('data', async ()=>{
+  src('./data/*.*')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
+
 // 监听文件变化
 task('watch',async ()=>{
   watch('./img/*.*',series('image'));
   watch('./scss/*.scss',series('style'));
   watch('./js/*.js',series('script'));
   watch('./html/*.html',series('html'));
+  watch('./data/*.*',series('data'));
 })
 
 // 启动服务，自动刷新
@@ -57,4 +65,4 @@ task('connect',async ()=>{
 })
 
 // 构建开发包
-task('dev',series('delDist','image','style','script','html','connect','watch'))
+task('dev',series('delDist','image','style','script','html','data','connect','watch'))

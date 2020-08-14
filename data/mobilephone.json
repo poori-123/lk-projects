@@ -1,0 +1,81 @@
+{
+    "phone01":{
+        "code":"phone01",
+        "name":"HUAWEI Mate Xs 5G",
+        "intro":"科技新物种",
+        "price":16999,
+        "imgsrc":"../img/mobileimg1.png",
+        "promotion":{
+            "type":0,
+            "msg":"限时特惠"
+        }
+    },
+    "phone02":{
+        "code":"phone02",
+        "name":"HUAWEI P40 Pro+",
+        "intro":"享6期免息",
+        "price":7988,
+        "imgsrc":"../img/mobileimg2.png"
+    },
+    "phone03":{
+        "code":"phone03",
+        "name":"荣耀30",
+        "intro":"最高省410元|部分增配件|免息",
+        "price":2999,
+        "imgsrc":"../img/mobileimg3.png",
+        "promotion":{
+            "type":0,
+            "msg":"热销爆款"
+        }
+    },
+    "phone04":{
+        "code":"phone04",
+        "name":"HUAWEI Mate 30 5G",
+        "intro":"6期免息|增精美配件",
+        "price":4469,
+        "imgsrc":"../img/mobileimg4.png"
+    },
+    "phone05":{
+        "code":"phone05",
+        "name":"荣耀Play4",
+        "intro":"6400万锐力四摄",
+        "price":1899,
+        "imgsrc":"../img/mobileimg5.png"
+    },
+    "phone06":{
+        "code":"phone06",
+        "name":"华为麦芒 9",
+        "intro":"首销赠耳机",
+        "price":2399,
+        "imgsrc":"../img/mobileimg6.png",
+        "promotion":{
+            "type":0,
+            "msg":"热销爆款"
+        }
+    },
+    "phone07":{
+        "code":"phone07",
+        "name":"荣耀X10 Max",
+        "intro":"12期免息",
+        "price":2099,
+        "imgsrc":"../img/mobileimg7.png"
+    },
+    "phone08":{
+        "code":"phone08",
+        "name":"华为畅享Z 5G",
+        "intro":"最高省50+增耳机",
+        "price":2199,
+        "imgsrc":"../img/mobileimg8.png",
+        "promotion":{
+            "type":1,
+            "msg":"新品推荐"
+        }
+    },
+    "phone09":{
+        "code":"phone09",
+        "name":"荣耀Play4T Pro",
+        "intro":"最高优惠110元",
+        "price":1499,
+        "imgsrc":"../img/mobileimg9.png"
+    }
+}

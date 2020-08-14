@@ -1,0 +1,77 @@
+{
+    "laptop01":{
+        "code":"laptop01",
+        "name":"荣耀笔记本Pro 2020新款",
+        "intro":"最高直降500元",
+        "price":4599,
+        "imgsrc":"../img/laptopimg1.png"
+    },
+    "laptop02":{
+        "code":"laptop02",
+        "name":"HUAWEI MateBook D 15 锐龙版",
+        "intro":"预定省100+蓝牙鼠标+3期免息",
+        "price":4199,
+        "imgsrc":"../img/laptopimg2.png",
+        "promotion":{
+            "type":0,
+            "msg":"新品上市"
+        }
+    },
+    "laptop03":{
+        "code":"laptop03",
+        "name":"荣耀笔记本14 2020新款",
+        "intro":"新品最高优惠100元",
+        "price":3899,
+        "imgsrc":"../img/laptopimg3.png"
+    },
+    "laptop04":{
+        "code":"laptop04",
+        "name":"HUAWEI MateBook X Pro",
+        "intro":"预定省100+赠鼠标+3期免息",
+        "price":9999,
+        "imgsrc":"../img/laptopimg4.png",
+        "promotion":{
+            "type":0,
+            "msg":"3K 触控屏"
+        }
+    },
+    "laptop05":{
+        "code":"laptop05",
+        "name":"荣耀笔记本15 2020新款",
+        "intro":"新品最高优惠100元",
+        "price":3499,
+        "imgsrc":"../img/laptopimg5.png"
+    },
+    "laptop06":{
+        "code":"laptop06",
+        "name":"HUAWEI MateBook 14 2020款",
+        "intro":"预定省100+3期免息",
+        "price":6399,
+        "imgsrc":"../img/laptopimg6.png"
+    },
+    "laptop07":{
+        "code":"laptop07",
+        "name":"荣耀笔记本 Pro 2020新款 Intel版",
+        "intro":"最高直降500元",
+        "price":5499,
+        "imgsrc":"../img/laptopimg7.png"
+    },
+    "laptop08":{
+        "code":"laptop08",
+        "name":"HUAWEI MateBook 13 2020款",
+        "intro":"预定省100+3期免息",
+        "price":5999,
+        "imgsrc":"../img/laptopimg8.png",
+        "promotion":{
+            "type":1,
+            "msg":"新品推荐"
+        }
+    },
+    "laptop09":{
+        "code":"laptop09",
+        "name":"荣耀笔记本Pro",
+        "intro":"最高直降500元",
+        "price":4299,
+        "imgsrc":"../img/laptopimg9.png"
+    }
+}
