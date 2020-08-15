@@ -18,6 +18,7 @@ $('.banner-con-list .list').hover(
         $(this).css('border-radius','10px');
     }
 );
+/* 设置顶部banner图 */
 var tmd1 = tmdBanner({
     imgs:'.banner-img li',
     left:'.banner-img-btnL',
@@ -29,8 +30,11 @@ $recommendList = $('.recommend-list');
 $recommendListBtnL = $('.recommend-list-btnL');
 $recommendListBtnR = $('.recommend-list-btnR');
 var recommendListIndex = 0;
+var fixedLsit2Index = -1;
+/* 推荐列表事件 */
+var maxIndex = Math.ceil($recommendList.find('li').length/5)-1;
 $recommendListBtnL.click(function(){
-    if(recommendListIndex === 2){
+    if(recommendListIndex === maxIndex){
         $recommendListBtnR.css('display','block');
     };
     recommendListIndex --;
@@ -45,10 +49,11 @@ $recommendListBtnR.click(function(){
     };
     recommendListIndex ++;
     $recommendList.animate({'scrollLeft':recommendListIndex*1200});
-    if(recommendListIndex === 2){
+    if(recommendListIndex === maxIndex){
         $recommendListBtnR.css('display','none');
     };
 });
+/* 设置中部banner图 */
 var tmd2 = tmdBanner({
     imgs:'.newsbanner a',
     left:'.newsbanner span',
@@ -60,6 +65,7 @@ var tmd2 = tmdBanner({
 var $mobilephoneList = $('.mobilephone .goodsList-list');
 var $laptopList = $('.laptop .goodsList-list');
 var $hotCellList = $('.hotCell ul');
+/* 请求手机的数据并显示 */
 $.ajax({
     url:'../data/mobilephone.json',
     type:'get',
@@ -76,7 +82,7 @@ $.ajax({
                 }
             }
             var domStr = `
-                <li><a href="./goodsList.html?type=mobilephone&code=${arr[i].code}">
+                <li><a href="./goodsDetail.html?type=mobilephone&code=${arr[i].code}">
                     <img src="${arr[i].imgsrc}" alt="">
                     <h4>${arr[i].name}</h4>
                     <h5>${arr[i].intro}</h5>
@@ -93,6 +99,7 @@ $.ajax({
         alert('请求失败');
     }
 });
+/* 请求笔记本电脑的数据并显示 */
 $.ajax({
     url:'../data/laptop.json',
     type:'get',
@@ -109,7 +116,7 @@ $.ajax({
                 }
             }
             var domStr = `
-                <li><a href="./goodsList.html?type=mobilephone&code=${arr[i].code}">
+                <li><a href="./goodsDetail.html?type=laptop&code=${arr[i].code}">
                     <img src="${arr[i].imgsrc}" alt="">
                     <h4>${arr[i].name}</h4>
                     <h5>${arr[i].intro}</h5>
@@ -127,6 +134,7 @@ $.ajax({
         alert('请求失败');
     }
 });
+/* 右下固定定位列表 */
 $('.fixedList i').hover(function(){
     $(this).siblings('p').css('display','block');
 },function(){
@@ -137,11 +145,73 @@ $('.fixedList i').eq(3).click(function(){
         'scrollTop':0
     })
 });
+var throttleChange= throttle(300,scrollChange);
 window.onscroll = function(){
+    throttleChange();
+};
+function scrollChange(){
     if(document.documentElement.scrollTop >= document.documentElement.clientHeight){
         $('.fixedList .last').css('display','block');
     }
     if(document.documentElement.scrollTop < document.documentElement.clientHeight){
         $('.fixedList .last').css('display','none');
     }
+    if(document.documentElement.scrollTop >= $('.mobilephone').offset().top){
+        $('.fixedLsit2').stop(true);
+        $('.fixedLsit2').animate({'right':'5'});
+    }
+    if(document.documentElement.scrollTop < $('.mobilephone').offset().top){
+        $('.fixedLsit2').stop(true);
+        $('.fixedLsit2').animate({'right':'-100'});
+        $('.fixedLsit2 li').find('p').removeClass('on');
+        $('.fixedLsit2 li').find('span').slideUp();
+        fixedLsit2Index = -1;
+    }
+    if(document.documentElement.scrollTop >= $('.mobilephone').offset().top && document.documentElement.scrollTop < ($('.mobilephone').offset().top + $('.mobilephone').height())){ 
+        if(fixedLsit2Index !== 0){
+            $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').removeClass('on');
+            $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').css('color','#999');
+            $('.fixedLsit2 li').eq(fixedLsit2Index).find('span').slideUp(function(){
+                $('.fixedLsit2 .phone').eq(0).find('span').slideDown();
+                fixedLsit2Index = 0;
+            });
+            $('.fixedLsit2 .phone').eq(0).find('p').addClass('on');
+        }
+    }
+    if(document.documentElement.scrollTop >= $('.laptop').offset().top && document.documentElement.scrollTop < ($('.laptop').offset().top + $('.laptop').height())){
+        if(fixedLsit2Index !== 1){
+            $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').removeClass('on');
+            $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').css('color','#999');
+            $('.fixedLsit2 li').eq(fixedLsit2Index).find('span').slideUp(function(){
+                $('.fixedLsit2 .laptop').eq(0).find('span').slideDown();
+                fixedLsit2Index = 1;
+            });
+            $('.fixedLsit2 .laptop').eq(0).find('p').addClass('on');
+        };
+        
+    };
 };
+/* 右侧中部固定列表 */
+$('.fixedLsit2 li').hover(function(){
+    $(this).find('p').css('color','#333');
+},function(){
+    if(!$(this).find('p').hasClass('on')){
+        $(this).find('p').css('color','#999');
+    } 
+});
+$('.fixedLsit2 li').click(function(){
+    $this = $(this);
+    $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').removeClass('on');
+    $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').css('color','#999');
+    $('.fixedLsit2 li').eq(fixedLsit2Index).find('span').slideUp(function(){
+        $this.find('span').slideDown();
+        fixedLsit2Index = $this.index();
+    });
+    $(this).find('p').addClass('on');
+});
+$('.fixedLsit2 .phone').click(function(){
+    $('html').animate({'scrollTop':$('.mobilephone').offset().top});
+});
+$('.fixedLsit2 .laptop').click(function(){
+    $('html').animate({'scrollTop':$('.laptop').offset().top});
+});

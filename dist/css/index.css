@@ -126,6 +126,8 @@
                 border: 1px solid #f7f7f7;
                 background: url(../img/searchicon6.png) no-repeat center; }
               .banner-con-list .list > li .list-cont ul .viewAll a {
+                position: absolute;
+                z-index: 19;
                 display: block;
                 width: 80px;
                 line-height: 42px;
@@ -594,11 +596,14 @@
       float: left;
       width: 230px;
       height: 290px;
-      margin: 0 12px 12px 0;
+      margin: 0 10px 10px 0;
       border-radius: 10px;
       overflow: hidden;
       position: relative;
-      background: #f9f9f9; }
+      background: #f9f9f9;
+      border: 1px solid #fff; }
+      .goodsList-list li:hover {
+        border-color: #ccc; }
       .goodsList-list li a {
         display: block; }
         .goodsList-list li a img {
@@ -670,6 +675,34 @@
       display: none; }
     .fixedList li .last {
       display: none; }
+
+/* fixedLsit2 */
+.fixedLsit2 {
+  position: fixed;
+  right: -100px;
+  top: 50%;
+  z-index: 99; }
+  .fixedLsit2 li {
+    margin-bottom: 20px;
+    height: 20px;
+    position: relative;
+    cursor: pointer; }
+    .fixedLsit2 li p {
+      text-align: end;
+      font-size: 12px;
+      line-height: 20px;
+      color: #999;
+      margin-right: 15px; }
+    .fixedLsit2 li span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 20px;
+      background: #cb242b;
+      display: none; }
+    .fixedLsit2 li .on {
+      color: #333 !important; }
 
 /* footer */
 .footer {

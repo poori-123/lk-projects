@@ -310,6 +310,8 @@
                   border: 1px solid #f7f7f7;
                   background: url(../img/searchicon6.png) no-repeat center; }
                 .searchWrap > ul .all .dis-list > li .dis-cont ul .viewAll a {
+                  position: absolute;
+                  z-index: 19;
                   display: block;
                   width: 80px;
                   line-height: 42px;

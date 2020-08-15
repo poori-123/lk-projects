@@ -148,6 +148,8 @@
                                     background: url(../img/searchicon6.png) no-repeat center;
                                 }
                                 a{
+                                    position: absolute;
+                                    z-index: 19;
                                     display: block;
                                     width: 80px;
                                     line-height: 42px;
@@ -732,11 +734,15 @@
             float: left;
             width: 230px;
             height: 290px;
-            margin:  0 12px 12px 0;
+            margin:  0 10px 10px 0;
             border-radius: 10px;
             overflow: hidden;
             position: relative;
             background: #f9f9f9;
+            border: 1px solid #fff;
+            &:hover{
+                border-color: #ccc;
+            }
             a{
                 display: block;
                 img{
@@ -827,6 +833,38 @@
             display: none;
         }
 
+    }
+}
+/* fixedLsit2 */
+.fixedLsit2{
+    position: fixed;
+    right: -100px;
+    top: 50%;
+    z-index: 99;
+    li{
+        margin-bottom: 20px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        p{
+            text-align: end;
+            font-size: 12px;
+            line-height: 20px;
+            color: #999;
+            margin-right: 15px;
+        }
+        span{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 20px;
+            background: #cb242b;
+            display: none;
+        }
+        .on{
+            color: #333 !important;
+        }
     }
 }
 /* footer */

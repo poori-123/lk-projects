@@ -564,3 +564,21 @@ function getQueryString(key){
     var arr = searchStr.match(reg);
     return (RegExp.$1);
 };
+
+// 函数节流
+function throttle(delay,fnName){
+    var lastTime,timer;
+    return function (){
+        var nowTime = Date.now();// 当前的时间
+        if (lastTime && (nowTime - lastTime) < delay) {
+            clearTimeout(timer);
+            timer = setTimeout(function (){
+                lastTime = Date.now();
+                fnName();
+            },delay)
+        } else {
+            lastTime = nowTime;
+            fnName();
+        };
+    };
+};

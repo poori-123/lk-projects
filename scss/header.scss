@@ -400,6 +400,8 @@
                                         background: url(../img/searchicon6.png) no-repeat center;
                                     }
                                     a{
+                                        position: absolute;
+                                        z-index: 19;
                                         display: block;
                                         width: 80px;
                                         line-height: 42px;

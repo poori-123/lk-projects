@@ -8,14 +8,20 @@
         "promotion":{
             "type":0,
             "msg":"限时特惠"
-        }
+        },
+        "discounts":["一站式换新","商品增卷"],
+        "goodReputation":"99%",
+        "evaluate":72
     },
     "phone02":{
         "code":"phone02",
         "name":"HUAWEI P40 Pro+",
         "intro":"享6期免息",
         "price":7988,
-        "imgsrc":"../img/mobileimg2.png"
+        "imgsrc":"../img/mobileimg2.png",
+        "discounts":["一站式换新","商品增卷"],
+        "goodReputation":"99%",
+        "evaluate":72
     },
     "phone03":{
         "code":"phone03",
@@ -26,21 +32,30 @@
         "promotion":{
             "type":0,
             "msg":"热销爆款"
-        }
+        },
+        "discounts":["一站式换新","商品增卷"],
+        "goodReputation":"100%",
+        "evaluate":13
     },
     "phone04":{
         "code":"phone04",
         "name":"HUAWEI Mate 30 5G",
         "intro":"6期免息|增精美配件",
         "price":4469,
-        "imgsrc":"../img/mobileimg4.png"
+        "imgsrc":"../img/mobileimg4.png",
+        "discounts":["一站式换新","新品限量赠"],
+        "goodReputation":"98%",
+        "evaluate":1451
     },
     "phone05":{
         "code":"phone05",
         "name":"荣耀Play4",
         "intro":"6400万锐力四摄",
         "price":1899,
-        "imgsrc":"../img/mobileimg5.png"
+        "imgsrc":"../img/mobileimg5.png",
+        "discounts":["整点赠送","商品增卷"],
+        "goodReputation":"99%",
+        "evaluate":660
     },
     "phone06":{
         "code":"phone06",
@@ -51,14 +66,20 @@
         "promotion":{
             "type":0,
             "msg":"热销爆款"
-        }
+        },
+        "discounts":["一站式换新","商品增卷"],
+        "goodReputation":"99%",
+        "evaluate":3600
     },
     "phone07":{
         "code":"phone07",
         "name":"荣耀X10 Max",
         "intro":"12期免息",
-        "price":2099,
-        "imgsrc":"../img/mobileimg7.png"
+        "price":999,
+        "imgsrc":"../img/mobileimg7.png",
+        "discounts":["一站式换新","分期免息","限量送"],
+        "goodReputation":"98%",
+        "evaluate":3090
     },
     "phone08":{
         "code":"phone08",
@@ -69,13 +90,19 @@
         "promotion":{
             "type":1,
             "msg":"新品推荐"
-        }
+        },
+        "discounts":["一站式换新","下单立减","限量送"],
+        "goodReputation":"99%",
+        "evaluate":16720
     },
     "phone09":{
         "code":"phone09",
         "name":"荣耀Play4T Pro",
         "intro":"最高优惠110元",
         "price":1499,
-        "imgsrc":"../img/mobileimg9.png"
+        "imgsrc":"../img/mobileimg9.png",
+        "discounts":["一站式换新","商品增卷"],
+        "goodReputation":"99%",
+        "evaluate":8866
     }
 }
