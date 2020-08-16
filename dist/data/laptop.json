@@ -5,6 +5,13 @@
         "intro":"最高直降500元",
         "price":4599,
         "imgsrc":"../img/laptopimg1.png",
+        "detailimg":{
+            "../img/laptopimg1-1.png":"../img/laptopimg1-1.1.png",
+            "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
+            "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
+            "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
+            "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
+        },
         "discounts":["一站式换新","积分双倍抵现"],
         "goodReputation":"99%",
         "evaluate":409
@@ -15,6 +22,11 @@
         "intro":"预定省100+蓝牙鼠标+3期免息",
         "price":4199,
         "imgsrc":"../img/laptopimg2.png",
+        "detailimg":{
+            "../img/laptopimg2-1.png":"../img/laptopimg2-1.1.png",
+            "../img/laptopimg2-2.png":"../img/laptopimg2-2.1.png",
+            "../img/laptopimg2-3.png":"../img/laptopimg2-3.1.png"
+        },
         "promotion":{
             "type":0,
             "msg":"新品上市"
@@ -29,6 +41,11 @@
         "intro":"新品最高优惠100元",
         "price":3899,
         "imgsrc":"../img/laptopimg3.png",
+        "detailimg":{
+            "../img/laptopimg3-1.png":"../img/laptopimg3-1.1.png",
+            "../img/laptopimg3-2.png":"../img/laptopimg3-2.1.png",
+            "../img/laptopimg3-3.png":"../img/laptopimg3-3.1.png"
+        },
         "discounts":["限时特价","老用户专享"],
         "goodReputation":"99%",
         "evaluate":8136
