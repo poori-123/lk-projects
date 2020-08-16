@@ -82,7 +82,7 @@ $.ajax({
                 }
             }
             var domStr = `
-                <li><a href="./goodsDetail.html?type=mobilephone&code=${arr[i].code}">
+                <li><a href="./goodsDetail.html?type=mobilephone&code=${arr[i].code}" target='_blank'>
                     <img src="${arr[i].imgsrc}" alt="">
                     <h4>${arr[i].name}</h4>
                     <h5>${arr[i].intro}</h5>
@@ -116,7 +116,7 @@ $.ajax({
                 }
             }
             var domStr = `
-                <li><a href="./goodsDetail.html?type=laptop&code=${arr[i].code}">
+                <li><a href="./goodsDetail.html?type=laptop&code=${arr[i].code}" target='_blank'>
                     <img src="${arr[i].imgsrc}" alt="">
                     <h4>${arr[i].name}</h4>
                     <h5>${arr[i].intro}</h5>

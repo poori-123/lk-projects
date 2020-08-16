@@ -105,16 +105,22 @@
                 float: right;
                 margin-left: 13px;
             }
-            ul{
+            .scroll{
                 float: left;
-                width: 350px;
+                width: 364px;
+                height: 68px;
                 overflow: hidden;
+            }
+            ul{
+                width: 999px;
+                height: 68px;
+                position: relative;
                 li{
                     width: 66px;
                     height: 66px;
                     border: 1px solid #fff;
                     float: left;
-                    margin-right: 10px;
+                    margin-right: 6px;
                     img{
                         width: 66px;
                         height: 66px;
@@ -155,7 +161,6 @@
             color: #333;
             overflow: hidden;
             label{
-                display: inline-block;
                 width: 85px;
                 text-indent: 10px;
                 font-size: 12px;
@@ -234,13 +239,17 @@
             padding-top: 16px;
             .p{
                 line-height: 30px;
-                margin-bottom: 10px;
+                div{
+                    float: left;
+                    max-width: 600px;
+                }
                 i{
                     display: inline-block;
                     cursor: pointer;
                     line-height: 28px;
                     padding: 0 12px;
                     border: 1px solid #ddd;
+                    margin: 0 10px 10px 0;
                 }
                 .on{
                     border-color: #ca141d;
@@ -253,6 +262,8 @@
                     padding: 0 12px 0 15px;
                     img{
                         float: left;
+                        width: 36px;
+                        height: 38px;
                     }
                 }
             }
@@ -311,7 +322,7 @@
                     color: #d6d6d6;
                     cursor: pointer;
                 }
-                .one{
+                .count{
                     background: #fafafa;
                     border-right: 1px solid #d6d6d6;
                     line-height: 44px;
@@ -322,7 +333,11 @@
                     cursor:default;
                 }
                 .add{
+                    color: #333;
                     border-bottom: 1px solid #d6d6d6;
+                }
+                .mius{
+                    cursor: not-allowed;
                 }
             }
             >div{
@@ -363,6 +378,9 @@
             .nomore{
                 background: #ca141d;
                 display: none;
+                .mask{
+                    display: block;
+                }
             }
         }
     }

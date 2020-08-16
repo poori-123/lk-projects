@@ -89,16 +89,21 @@
         background: #fff url(../img/goodsDetailicon3.png) no-repeat center;
         float: right;
         margin-left: 13px; }
-      .content-main-left-magnifyingList ul {
+      .content-main-left-magnifyingList .scroll {
         float: left;
-        width: 350px;
+        width: 364px;
+        height: 68px;
         overflow: hidden; }
+      .content-main-left-magnifyingList ul {
+        width: 999px;
+        height: 68px;
+        position: relative; }
         .content-main-left-magnifyingList ul li {
           width: 66px;
           height: 66px;
           border: 1px solid #fff;
           float: left;
-          margin-right: 10px; }
+          margin-right: 6px; }
           .content-main-left-magnifyingList ul li img {
             width: 66px;
             height: 66px; }
@@ -130,7 +135,6 @@
       color: #333;
       overflow: hidden; }
       .content-main-right .p label {
-        display: inline-block;
         width: 85px;
         text-indent: 10px;
         font-size: 12px;
@@ -190,14 +194,17 @@
     .content-main-right .choose {
       padding-top: 16px; }
       .content-main-right .choose .p {
-        line-height: 30px;
-        margin-bottom: 10px; }
+        line-height: 30px; }
+        .content-main-right .choose .p div {
+          float: left;
+          max-width: 600px; }
         .content-main-right .choose .p i {
           display: inline-block;
           cursor: pointer;
           line-height: 28px;
           padding: 0 12px;
-          border: 1px solid #ddd; }
+          border: 1px solid #ddd;
+          margin: 0 10px 10px 0; }
         .content-main-right .choose .p .on {
           border-color: #ca141d; }
       .content-main-right .choose .one {
@@ -206,7 +213,9 @@
           line-height: 38px;
           padding: 0 12px 0 15px; }
           .content-main-right .choose .one i img {
-            float: left; }
+            float: left;
+            width: 36px;
+            height: 38px; }
     .content-main-right .safeguard {
       line-height: 30px;
       margin-bottom: 10px; }
@@ -252,7 +261,7 @@
           text-align: center;
           color: #d6d6d6;
           cursor: pointer; }
-        .content-main-right .num ul .one {
+        .content-main-right .num ul .count {
           background: #fafafa;
           border-right: 1px solid #d6d6d6;
           line-height: 44px;
@@ -262,7 +271,10 @@
           color: #333;
           cursor: default; }
         .content-main-right .num ul .add {
+          color: #333;
           border-bottom: 1px solid #d6d6d6; }
+        .content-main-right .num ul .mius {
+          cursor: not-allowed; }
       .content-main-right .num > div {
         float: left;
         position: relative;
@@ -294,6 +306,8 @@
       .content-main-right .num .nomore {
         background: #ca141d;
         display: none; }
+        .content-main-right .num .nomore .mask {
+          display: block; }
 
 .hr {
   width: 100%;

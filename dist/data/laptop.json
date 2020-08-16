@@ -2,28 +2,34 @@
     "laptop01":{
         "code":"laptop01",
         "name":"荣耀笔记本Pro 2020新款",
+        "id":2601010181311,
         "intro":"最高直降500元",
         "price":4599,
         "imgsrc":"../img/laptopimg1.png",
         "detailimg":{
-            "../img/laptopimg1-1.png":"../img/laptopimg1-1.1.png",
+            "../img/laptopimg1-1.jpg":"../img/laptopimg1-1.1.jpg",
             "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
             "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
             "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
             "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
         },
         "discounts":["一站式换新","积分双倍抵现"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
-        "evaluate":409
+        "evaluate":409,
+        "stock":123
     },
     "laptop02":{
         "code":"laptop02",
         "name":"HUAWEI MateBook D 15 锐龙版",
+        "id":2601010181312,
         "intro":"预定省100+蓝牙鼠标+3期免息",
         "price":4199,
         "imgsrc":"../img/laptopimg2.png",
         "detailimg":{
-            "../img/laptopimg2-1.png":"../img/laptopimg2-1.1.png",
+            "../img/laptopimg2-1.jpg":"../img/laptopimg2-1.1.jpg",
             "../img/laptopimg2-2.png":"../img/laptopimg2-2.1.png",
             "../img/laptopimg2-3.png":"../img/laptopimg2-3.1.png"
         },
@@ -32,71 +38,103 @@
             "msg":"新品上市"
         },
         "discounts":["显示特价","一站式换新"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"97%",
-        "evaluate":70
+        "evaluate":70,
+        "stock":0
     },
     "laptop03":{
         "code":"laptop03",
         "name":"荣耀笔记本14 2020新款",
+        "id":2601010181313,
         "intro":"新品最高优惠100元",
         "price":3899,
         "imgsrc":"../img/laptopimg3.png",
         "detailimg":{
-            "../img/laptopimg3-1.png":"../img/laptopimg3-1.1.png",
+            "../img/laptopimg3-1.jpg":"../img/laptopimg3-1.1.jpg",
             "../img/laptopimg3-2.png":"../img/laptopimg3-2.1.png",
             "../img/laptopimg3-3.png":"../img/laptopimg3-3.1.png"
         },
         "discounts":["限时特价","老用户专享"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
-        "evaluate":8136
+        "evaluate":8136,
+        "stock":999
     },
     "laptop04":{
         "code":"laptop04",
         "name":"HUAWEI MateBook X Pro",
+        "id":2601010181314,
         "intro":"预定省100+赠鼠标+3期免息",
         "price":9999,
         "imgsrc":"../img/laptopimg4.png",
+        "detailimg":{
+            "../img/laptopimg4-1.jpg":"../img/laptopimg4-1.1.jpg",
+            "../img/laptopimg4-2.png":"../img/laptopimg4-2.1.png",
+            "../img/laptopimg4-3.png":"../img/laptopimg4-3.1.png"
+        },
         "promotion":{
             "type":0,
             "msg":"3K 触控屏"
         },
         "discounts":["限时特价","老用户专享"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"97%",
-        "evaluate":4921
+        "evaluate":4921,
+        "stock":52
     },
     "laptop05":{
         "code":"laptop05",
         "name":"荣耀笔记本15 2020新款",
+        "id":2601010181315,
         "intro":"新品最高优惠100元",
         "price":3499,
         "imgsrc":"../img/laptopimg5.png",
         "discounts":["限时特价","购机赠券","分期免息"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
         "evaluate":4621
     },
     "laptop06":{
         "code":"laptop06",
         "name":"HUAWEI MateBook 14 2020款",
+        "id":2601010181316,
         "intro":"预定省100+3期免息",
         "price":6399,
         "imgsrc":"../img/laptopimg6.png",
         "discounts":["一站式换新","限时特价"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
         "evaluate":16865
     },
     "laptop07":{
         "code":"laptop07",
         "name":"荣耀笔记本 Pro 2020新款 Intel版",
+        "id":2601010181317,
         "intro":"最高直降500元",
         "price":5499,
         "imgsrc":"../img/laptopimg7.png",
         "discounts":["一站式换新","赠送积分礼包"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"95%",
         "evaluate":5797
     },
     "laptop08":{
         "code":"laptop08",
         "name":"HUAWEI MateBook 13 2020款",
+        "id":2601010181318,
         "intro":"预定省100+3期免息",
         "price":5999,
         "imgsrc":"../img/laptopimg8.png",
@@ -105,16 +143,23 @@
             "msg":"新品推荐"
         },
         "discounts":["一站式换新","商品增卷"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
         "evaluate":5621
     },
     "laptop09":{
         "code":"laptop09",
         "name":"荣耀笔记本Pro",
+        "id":2601010181319,
         "intro":"最高直降500元",
         "price":4299,
         "imgsrc":"../img/laptopimg9.png",
         "discounts":["一站式换新","商品增卷"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"98%",
         "evaluate":2223
     }

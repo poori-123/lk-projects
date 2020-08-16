@@ -121,7 +121,7 @@ function appendData(){
                 domP = `<p><span class="blueicon">${dataArr[i].promotion.msg}</span></p>`;
             };
         };
-        domLi = `<li><a href="./goodsDetail.html?type=mobilephone&code=${dataArr[i].code}">
+        domLi = `<li><a href="./goodsDetail.html?type=${key}&code=${dataArr[i].code}">
             <img src="${dataArr[i].imgsrc}" alt="">
             <h3>${dataArr[i].name}</h3>
             <h4>￥<span>${dataArr[i].price}</span>起<i>多款可选</i></h4>

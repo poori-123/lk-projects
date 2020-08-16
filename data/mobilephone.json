@@ -2,6 +2,7 @@
     "phone01":{
         "code":"phone01",
         "name":"HUAWEI Mate Xs 5G",
+        "id":2601010181301,
         "intro":"科技新物种",
         "price":16999,
         "imgsrc":"../img/mobileimg1.png",
@@ -15,27 +16,37 @@
             "msg":"限时特惠"
         },
         "discounts":["一站式换新","商品增卷"],
+        "color":["星际蓝"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 16GB+1TB"],
+        "combo":["官方标配"],
         "goodReputation":"99%",
-        "evaluate":72
+        "evaluate":72,
+        "stock":0
     },
     "phone02":{
         "code":"phone02",
         "name":"HUAWEI P40 Pro+",
+        "id":2601010181302,
         "intro":"享6期免息",
         "price":7988,
         "imgsrc":"../img/mobileimg2.png",
         "detailimg":{
-            "../img/mobileimg2-1.png":"../img/mobileimg2-1.1.png",
+            "../img/mobileimg2-1.jpg":"../img/mobileimg2-1.1.jpg",
             "../img/mobileimg2-2.png":"../img/mobileimg2-2.1.png",
             "../img/mobileimg2-3.png":"../img/mobileimg2-3.1.png"
         },
         "discounts":["一站式换新","商品增卷"],
+        "color":["星际蓝","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
-        "evaluate":72
+        "evaluate":72,
+        "stock":132
     },
     "phone03":{
         "code":"phone03",
         "name":"荣耀30",
+        "id":2601010181303,
         "intro":"最高省410元|部分增配件|免息",
         "price":2999,
         "imgsrc":"../img/mobileimg3.png",
@@ -49,43 +60,58 @@
             "msg":"热销爆款"
         },
         "discounts":["一站式换新","商品增卷"],
+        "color":["梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"100%",
-        "evaluate":13
+        "evaluate":13,
+        "stock":1
     },
     "phone04":{
         "code":"phone04",
         "name":"HUAWEI Mate 30 5G",
+        "id":2601010181304,
         "intro":"6期免息|增精美配件",
         "price":4469,
         "imgsrc":"../img/mobileimg4.png",
         "detailimg":{
-            "../img/mobileimg4-1.png":"../img/mobileimg4-1.1.png",
+            "../img/mobileimg4-1.jpg":"../img/mobileimg4-1.1.jpg",
             "../img/mobileimg4-2.png":"../img/mobileimg4-2.1.png",
             "../img/mobileimg4-3.png":"../img/mobileimg4-3.1.png",
             "../img/mobileimg4-4.png":"../img/mobileimg4-4.1.png"
         },
         "discounts":["一站式换新","新品限量赠"],
+        "color":["星际蓝","梦幻紫"],
+        "vision":["5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配"],
         "goodReputation":"98%",
-        "evaluate":1451
+        "evaluate":1451,
+        "stock":999
     },
     "phone05":{
         "code":"phone05",
         "name":"荣耀Play4",
+        "id":2601010181305,
         "intro":"6400万锐力四摄",
         "price":1899,
         "imgsrc":"../img/mobileimg5.png",
         "detailimg":{
             "../img/mobileimg5-1.png":"../img/mobileimg5-1.1.png",
-            "../img/mobileimg5-2.png":"../img/mobileimg5-2.1.png",
-            "../img/mobileimg5-3.png":"../img/mobileimg5-3.1.png"
+            "../img/mobileimg5-2.jpg":"../img/mobileimg5-2.1.jpg",
+            "../img/mobileimg5-3.jpg":"../img/mobileimg5-3.1.jpg"
         },
         "discounts":["整点赠送","商品增卷"],
+        "color":["星际蓝","陶瓷白"],
+        "vision":["4G全网通 8GB+256GB","4G全网通 8GB+128GB"],
+        "combo":["官方标配"],
         "goodReputation":"99%",
-        "evaluate":660
+        "evaluate":660,
+        "stock":111
     },
     "phone06":{
         "code":"phone06",
         "name":"华为麦芒 9",
+        "id":2601010181306,
         "intro":"首销赠耳机",
         "price":2399,
         "imgsrc":"../img/mobileimg6.png",
@@ -94,22 +120,30 @@
             "msg":"热销爆款"
         },
         "discounts":["一站式换新","商品增卷"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
         "evaluate":3600
     },
     "phone07":{
         "code":"phone07",
         "name":"荣耀X10 Max",
+        "id":2601010181307,
         "intro":"12期免息",
         "price":999,
         "imgsrc":"../img/mobileimg7.png",
         "discounts":["一站式换新","分期免息","限量送"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"98%",
         "evaluate":3090
     },
     "phone08":{
         "code":"phone08",
         "name":"华为畅享Z 5G",
+        "id":2601010181308,
         "intro":"最高省50+增耳机",
         "price":2199,
         "imgsrc":"../img/mobileimg8.png",
@@ -118,16 +152,23 @@
             "msg":"新品推荐"
         },
         "discounts":["一站式换新","下单立减","限量送"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
         "evaluate":16720
     },
     "phone09":{
         "code":"phone09",
         "name":"荣耀Play4T Pro",
+        "id":2601010181309,
         "intro":"最高优惠110元",
         "price":1499,
         "imgsrc":"../img/mobileimg9.png",
         "discounts":["一站式换新","商品增卷"],
+        "color":["星际蓝","梦幻紫","陶瓷白"],
+        "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
+        "combo":["官方标配","豪华套餐"],
         "goodReputation":"99%",
         "evaluate":8866
     }
