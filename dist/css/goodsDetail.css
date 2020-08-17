@@ -342,3 +342,53 @@
     min-width: 1200px; }
     .content-bot-details img {
       width: 100%; }
+
+/* cartMask */
+.cartMask {
+  width: 100%;
+  min-width: 1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.3);
+  display: none; }
+  .cartMask .box {
+    position: absolute;
+    width: 373px;
+    top: 380px;
+    left: 50%;
+    margin-left: -230px;
+    background: #fff;
+    padding: 25px 50px 21px 37px; }
+    .cartMask .box P {
+      font-size: 18px;
+      line-height: 30px;
+      color: #333;
+      padding-left: 37px;
+      background: url(../img/addcart.png) no-repeat left top; }
+    .cartMask .box i {
+      display: block;
+      margin: 16px auto 0;
+      width: 170px;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      border: 1px solid #dddddd;
+      background: #fff;
+      color: #333;
+      font-size: 18px;
+      cursor: pointer; }
+      .cartMask .box i:hover {
+        background: #ca141d;
+        border-color: #ca141d;
+        color: #fff; }
+    .cartMask .box span {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 14px;
+      height: 14px;
+      background: url(../img/addcartX.png) no-repeat;
+      cursor: pointer; }

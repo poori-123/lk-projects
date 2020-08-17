@@ -1,14 +1,7 @@
 /* 加载公共部分 */
 $('.header').load('./header.html');
 $('.footer').load('./footer.html');
-window.onload = function(){
-    $('.searchWrap .all').css('display','none');
-};
-// (async function(){
-//     await $('.header').load('./header.html');
-//     console.log($('.searchWrap .all'));
-//     $('.searchWrap .all').css('display','none');
-// })();
+
 /* banner */
 $('.banner-con-list .list').hover(
     function(){
@@ -215,3 +208,12 @@ $('.fixedLsit2 .phone').click(function(){
 $('.fixedLsit2 .laptop').click(function(){
     $('html').animate({'scrollTop':$('.laptop').offset().top});
 });
+
+/* 同步用户数据 */
+(function(){
+    var user = JSON.parse(localStorage.getItem('user'));
+    if(getCookie('username')){
+        var name = getCookie('username');
+        $('.usermsg .usermsg-left-login').text('欢迎您'+ user[name].nickname);
+    };
+})();

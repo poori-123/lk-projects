@@ -115,6 +115,12 @@
         "intro":"首销赠耳机",
         "price":2399,
         "imgsrc":"../img/mobileimg6.png",
+        "detailimg":{
+            "../img/mobileimg4-1.jpg":"../img/mobileimg4-1.1.jpg",
+            "../img/mobileimg4-2.png":"../img/mobileimg4-2.1.png",
+            "../img/mobileimg4-3.png":"../img/mobileimg4-3.1.png",
+            "../img/mobileimg4-4.png":"../img/mobileimg4-4.1.png"
+        },
         "promotion":{
             "type":0,
             "msg":"热销爆款"
@@ -133,6 +139,12 @@
         "intro":"12期免息",
         "price":999,
         "imgsrc":"../img/mobileimg7.png",
+        "detailimg":{
+            "../img/mobileimg4-1.jpg":"../img/mobileimg4-1.1.jpg",
+            "../img/mobileimg4-2.png":"../img/mobileimg4-2.1.png",
+            "../img/mobileimg4-3.png":"../img/mobileimg4-3.1.png",
+            "../img/mobileimg4-4.png":"../img/mobileimg4-4.1.png"
+        },
         "discounts":["一站式换新","分期免息","限量送"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
@@ -147,6 +159,12 @@
         "intro":"最高省50+增耳机",
         "price":2199,
         "imgsrc":"../img/mobileimg8.png",
+        "detailimg":{
+            "../img/mobileimg4-1.jpg":"../img/mobileimg4-1.1.jpg",
+            "../img/mobileimg4-2.png":"../img/mobileimg4-2.1.png",
+            "../img/mobileimg4-3.png":"../img/mobileimg4-3.1.png",
+            "../img/mobileimg4-4.png":"../img/mobileimg4-4.1.png"
+        },
         "promotion":{
             "type":1,
             "msg":"新品推荐"
@@ -165,6 +183,12 @@
         "intro":"最高优惠110元",
         "price":1499,
         "imgsrc":"../img/mobileimg9.png",
+        "detailimg":{
+            "../img/mobileimg4-1.jpg":"../img/mobileimg4-1.1.jpg",
+            "../img/mobileimg4-2.png":"../img/mobileimg4-2.1.png",
+            "../img/mobileimg4-3.png":"../img/mobileimg4-3.1.png",
+            "../img/mobileimg4-4.png":"../img/mobileimg4-4.1.png"
+        },
         "discounts":["一站式换新","商品增卷"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],

@@ -559,7 +559,7 @@ function removeCookie(key){
 // 获取url中的某个参数值
 function getQueryString(key){
     var url = location.href;
-    var searchStr = url.split('?')[1];
+    var searchStr = url.split('?')[1] || 'abc';
     var reg = new RegExp('[&]?'+key+'=([^&#]*)[&]?','i');
     var arr = searchStr.match(reg);
     return (RegExp.$1);

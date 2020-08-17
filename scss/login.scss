@@ -1,7 +1,7 @@
 .header{
     width: 100%;
     background: #f2f2f2;
-    border-top: 1px solid #dadce0;
+    // border-top: 1px solid #dadce0;
     overflow: hidden;
     .head{
         max-width: 1200px;
@@ -33,36 +33,37 @@
 /* content */
 .content{
     width: 100%;
+    position: relative;
+    overflow: hidden;
     &-top{
-        font-size: 26px;
+        font-size: 32px;
         color: #333;
         text-align: center;
-        line-height: 30px;
-        margin: 82px 0 65px;
+        line-height: 40px;
+        margin: 102px 0 79px;
     }
     &-bot{
         text-align: center;
-        overflow: hidden;
-        min-height: 625px;
+        min-height: 558px;
         vertical-align: top;
         &-left{
             display: inline-block;
-            width: 285px;
+            width: 330px;
             vertical-align: top;
             h3{
-                width: 128px;
-                height: 128px;
+                width: 160px;
+                height: 160px;
                 margin: 0 auto;
                 border-radius: 10px;
                 background: #f7f7f7;
-                padding: 16px;
+                padding: 20px;
                 img{
-                    width: 128px;
-                    height: 128px;
+                    width: 160px;
+                    height: 160px;
                 }
             }
             P{
-                margin-top: 40px;
+                margin-top: 55px;
                 font-size: 12px;
                 color: #838383;
                 line-height: 16px;
@@ -70,8 +71,8 @@
             }
         }
         &-mid{
-            margin: 0 50px 0 55px;
-            height: 240px;
+            margin: 0 63px 0 80px;
+            height: 300px;
             width: 1px;
             background: #e5e5e5;
             display: inline-block;
@@ -82,57 +83,83 @@
             vertical-align: top;
             input{
                 display: block;
-                width: 273px;
-                height: 38px;
+                width: 342px;
+                height: 48px;
                 border: 1px solid #fff;
                 border-radius: 10px;
                 background: #f2f2f2;
-                padding-left: 13px;
-                font-size: 12px;
-                line-height: 38px;
-                color: #999;
+                padding-left: 16px;
+                font-size: 14px;
+                line-height: 48px;
+                color: #333;
             }
             .name{
-                margin-bottom: 20px;
-                overflow: hidden;
+                margin-bottom: 26px;
+                position: relative;
+                .notice{
+                    position: absolute;
+                    line-height: 12px;
+                    font-size: 12px;
+                    padding-left: 18px;
+                    background: url(../img/loginnotice.png) no-repeat 0 0;
+                    color: #fa2a2d;
+                    top: -20px;
+                    left: 5px;
+                    display: none;
+                }
+            }
+            .psd{
+                position: relative;
+                i{
+                    position: absolute;
+                    width: 22px;
+                    height: 20px;
+                    right: 19px;
+                    top: 14px;
+                    background: url(../img/loginpsd1.png) no-repeat center;
+                    cursor: pointer;
+                    
+                }
             }
             .change{
-                margin-top: 11px;
+                margin-top: 17px;
                 overflow: hidden;
                 span{
                     float: left;
-                    font-size: 12px;
-                    line-height: 16px;
+                    font-size: 16px;
+                    line-height: 20px;
                     color: #007dff;
                     cursor: pointer;
                 }
             }
             .btn{
                 position: relative;
-                margin: 32px 0;
+                margin: 40px 0;
                 .loginBtn{
-                    width: 288px;
-                    height: 38px;
-                    line-height: 38px;
+                    width: 360px;
+                    height: 47px;
+                    line-height: 47px;
                     display: block;
                     border-radius: 10px;
                     background: #CA141D;
                     text-align: center;
-                    font-size: 12px;
+                    font-size: 18px;
                     font-weight: bold;
                     color: #fff;
                     border: none;
                     outline: none;
+                    cursor: pointer;
                 }
                 .mask{
-                    width: 288px;
-                    height: 38px;
+                    width: 360px;
+                    height: 47px;
                     position: absolute;
                     top: 0;
                     left: 0;
                     z-index: 1;
                     background: #fff;
                     opacity: 0.5;
+                    // display: none;
                 }
             }
             .other{
@@ -140,30 +167,29 @@
                 text-align: center;
                 li{
                     display: inline-block;
-                    line-height: 16px;
+                    line-height: 19px;
                     color: #007dff;
                     cursor: pointer;
-                    font-size: 12px;
+                    font-size: 14px;
                 }
                 span{
-                    margin: 0 12px;
-                    height: 16px;
+                    margin: 0 14px;
+                    height: 19px;
                     width: 1px;
                     background: #e5e5e5;
                     display: inline-block;
                 }
             }
             .phone{
-                margin-top: 24px;
+                margin-top: 28px;
                 text-align: center;
                 li{
                     display: inline-block;
-                    width: 32px;
-                    height: 32px;
+                    width: 40px;
+                    height: 40px;
                     border-radius: 50%;
-                    margin-right: 40px;
+                    margin-right: 50px;
                     cursor: pointer;
-                    border: 4px solid transparent;
                     &:hover{
                         border: none;
                         width: 40px;
@@ -190,6 +216,192 @@
                     }
                 }
             }
+        }
+    }
+}
+/* register */
+.registerWrap{ 
+    width: 100%;
+    min-height: 779px;
+    display: none;
+    .register{
+        width: 442px;
+        margin: 0 auto;
+        overflow: hidden;
+        h2{
+            font-size: 32px;
+            line-height: 46px;
+            margin-top: 69px;
+            color: #333;
+            text-align: center;
+        }
+        h3{
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+            color: #333;
+            a{
+                color: #007dff;
+            }
+            margin-bottom: 55px;
+        }
+        p{
+            margin-bottom: 29px;
+            position: relative;
+            input{
+                width: 440px;
+                height: 48px;
+                line-height: 48px;
+                display: block; 
+                border: 1px solid #fff;
+                border-radius: 10px;
+                text-indent: 17px;
+                color: #333;
+                font-size: 14px;
+                background: #f2f2f2;
+                padding: 0;
+            }
+            button{
+                background: #007dff;
+                width: 308px;
+                height: 48px;
+                line-height: 48px;
+                border: none;
+                outline: none;
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+                border-radius: 8px;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+            i{
+                position: absolute;
+                line-height: 12px;
+                font-size: 12px;
+                padding-left: 18px;
+                background: url(../img/loginnotice.png) no-repeat 0 0;
+                color: #fa2a2d;
+                top: -20px;
+                left: 5px;
+                display: none;
+            }
+            b{
+                position: absolute;
+                width: 22px;
+                height: 20px;
+                right: 19px;
+                top: 14px;
+                background: url(../img/loginpsd1.png) no-repeat center;
+                cursor: pointer;
+            }
+        }
+        .btn{
+            margin-top: 59px;
+            span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+/* footer */
+.footer{
+    width: 100%;
+    background: #f2f2f2;
+    padding-top: 36px;
+    padding-bottom: 24px;
+    ul{
+        overflow: hidden;
+        text-align: center;
+        height: 18px;
+        overflow: hidden;
+        li{
+            display: inline-block;
+            font-size: 14px;
+            line-height: 18px;
+            vertical-align: middle;
+            a{
+                display: block;
+                color: #333;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        span{
+            display: inline-block;
+            width: 1px;
+            height: 18px;
+            background: #e6d9d9;
+            margin:  0 15px;
+            vertical-align: middle;
+        }
+    }
+    P{
+        font-size: 12px;
+        line-height: 32px;
+        text-align: center;
+        color: #aaaaaa;
+    }
+}
+/* 登录成功跳转 */
+.loginTrue{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    z-index: 999;
+    display: none;
+    div{
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -250px;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        h3{
+            margin-top: 40px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 30px;
+            color: #999;
+            text-align: center;
+            margin: 20px 0;
+            span{
+                color: #CA141D;
+            }
+        }
+        a{
+            display: block;
+            width: 150px;
+            height: 50px;
+            color: #fff;
+            font-weight: bold;
+            background: #FF1F23;
+            border-radius: 10px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: center;
+            margin: 50px auto;
         }
     }
 }

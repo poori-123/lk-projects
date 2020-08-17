@@ -94,7 +94,7 @@ $('.footer').load('./footer.html');
                 bs += `<b>${item}</b>`;
             });
             $('.content-main-right .promotion>div').append('<div>'+ bs +'</div>');
-            $('.content-main-right .code strong').text(data.id);
+            $('.content-main-right .code strong').text(data.code);
             var colors ='';
             data.color.forEach(function(item){
                 colors += `<i><img src="${data.imgsrc}" alt="">${item}</i>`;
@@ -172,4 +172,36 @@ $('.footer').load('./footer.html');
         emStr = emStr.slice(0,emStr.length-2);
         $('.content-main-right .choosed div').html(emStr);
     };
+})();
+
+/* 加入购物车 */
+(function(){
+    var user = JSON.parse(localStorage.getItem('user'));
+    var $mask = $('.cartMask');
+    $('.content-main .addcart').click(function(){
+        if(!getCookie('username')){
+            $mask.css('display','block');
+            $mask.find('p').text('请登录后重试！');
+            return false;
+        };
+        var username = getCookie('username');
+        var code = $('.content-main-right .code strong').text();
+        var num = $('.content-main .num .count').text();
+        var userGoods = JSON.parse(localStorage.getItem(username + 'goods')) || {};
+        if(userGoods[code]){
+            userGoods[code] = parseInt(userGoods[code]) + parseInt(num);
+        }else{
+            userGoods[code] = num;
+        };
+        var userGoodsStr = JSON.stringify(userGoods);
+        localStorage.setItem(username + 'goods' , userGoodsStr);
+        $mask.css('display','block');
+        $mask.find('p').text($('.content-nav .name').find('p').text() +'成功加入购物车！');
+    });
+    $mask.find('i').click(function(){
+        $mask.css('display','none');
+    });
+    $mask.find('span').click(function(){
+        $mask.css('display','none');
+    });
 })();

@@ -37,7 +37,7 @@
             "type":0,
             "msg":"新品上市"
         },
-        "discounts":["显示特价","一站式换新"],
+        "discounts":["限时特价","一站式换新"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
         "combo":["官方标配","豪华套餐"],
@@ -96,6 +96,13 @@
         "intro":"新品最高优惠100元",
         "price":3499,
         "imgsrc":"../img/laptopimg5.png",
+        "detailimg":{
+            "../img/laptopimg1-1.jpg":"../img/laptopimg1-1.1.jpg",
+            "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
+            "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
+            "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
+            "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
+        },
         "discounts":["限时特价","购机赠券","分期免息"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
@@ -110,6 +117,13 @@
         "intro":"预定省100+3期免息",
         "price":6399,
         "imgsrc":"../img/laptopimg6.png",
+        "detailimg":{
+            "../img/laptopimg1-1.jpg":"../img/laptopimg1-1.1.jpg",
+            "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
+            "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
+            "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
+            "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
+        },
         "discounts":["一站式换新","限时特价"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
@@ -124,6 +138,13 @@
         "intro":"最高直降500元",
         "price":5499,
         "imgsrc":"../img/laptopimg7.png",
+        "detailimg":{
+            "../img/laptopimg1-1.jpg":"../img/laptopimg1-1.1.jpg",
+            "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
+            "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
+            "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
+            "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
+        },
         "discounts":["一站式换新","赠送积分礼包"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
@@ -138,6 +159,13 @@
         "intro":"预定省100+3期免息",
         "price":5999,
         "imgsrc":"../img/laptopimg8.png",
+        "detailimg":{
+            "../img/laptopimg1-1.jpg":"../img/laptopimg1-1.1.jpg",
+            "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
+            "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
+            "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
+            "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
+        },
         "promotion":{
             "type":1,
             "msg":"新品推荐"
@@ -156,6 +184,13 @@
         "intro":"最高直降500元",
         "price":4299,
         "imgsrc":"../img/laptopimg9.png",
+        "detailimg":{
+            "../img/laptopimg1-1.jpg":"../img/laptopimg1-1.1.jpg",
+            "../img/laptopimg1-2.png":"../img/laptopimg1-2.1.png",
+            "../img/laptopimg1-3.png":"../img/laptopimg1-3.1.png",
+            "../img/laptopimg1-4.png":"../img/laptopimg1-4.1.png",
+            "../img/laptopimg1-5.png":"../img/laptopimg1-5.1.png"
+        },
         "discounts":["一站式换新","商品增卷"],
         "color":["星际蓝","梦幻紫","陶瓷白"],
         "vision":["5G全网通 8GB+512GB","5G全网通 8GB+256GB","5G全网通 8GB+128GB"],
