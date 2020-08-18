@@ -1,6 +1,9 @@
 {
   "footer.css": "footer-3b94c1a429.css",
-  "header.css": "header-3ce56d177b.css",
-  "index.css": "index-15548a5fa1.css",
+  "goodsDetail.css": "goodsDetail-cf2c07103f.css",
+  "goodsList.css": "goodsList-72b7826eed.css",
+  "header.css": "header-62487267ea.css",
+  "index.css": "index-a20bcdb703.css",
+  "login.css": "login-c2c4780a0f.css",
   "reset.css": "reset-f297320ff3.css"
 }

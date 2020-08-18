@@ -167,7 +167,7 @@ $('.footer').load('./footer.html');
         choosedName();
     });
     function choosedDate(){
-        $ons = $('.content-main-right .choose .on');
+        var $ons = $('.content-main-right .choose .on');
         var emStr = '';
         $ons.each(function(index,item){
             emStr += `<em>${$(item).text()}</em>/ `;
@@ -197,7 +197,7 @@ $('.footer').load('./footer.html');
         var color = $('.content-main .choose .color .on').index();
         var vision = $('.content-main .choose .vision .on').index();
         var combo = $('.content-main .choose .combo .on').index();
-        codeNow = code + color + vision + combo;
+        var codeNow = code + color + vision + combo;
         var price = $('.content-main .price span').text();
         var goodsname =  $('.content-main-right h2').text();
         var goodssrc = $('.content-main .choose .color .on img').attr('src');
@@ -220,8 +220,10 @@ $('.footer').load('./footer.html');
     });
     $mask.find('i').click(function(){
         $mask.css('display','none');
+        location.reload();
     });
     $mask.find('span').click(function(){
         $mask.css('display','none');
+        location.reload();
     });
 })();

@@ -19,9 +19,9 @@ var tmd1 = tmdBanner({
     lis:'.banner-img-page li',
     time:3000
 });
-$recommendList = $('.recommend-list');
-$recommendListBtnL = $('.recommend-list-btnL');
-$recommendListBtnR = $('.recommend-list-btnR');
+var $recommendList = $('.recommend-list');
+var $recommendListBtnL = $('.recommend-list-btnL');
+var $recommendListBtnR = $('.recommend-list-btnR');
 var recommendListIndex = 0;
 var fixedLsit2Index = -1;
 /* 推荐列表事件 */
@@ -193,7 +193,7 @@ $('.fixedLsit2 li').hover(function(){
     } 
 });
 $('.fixedLsit2 li').click(function(){
-    $this = $(this);
+    var $this = $(this);
     $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').removeClass('on');
     $('.fixedLsit2 li').eq(fixedLsit2Index).find('p').css('color','#999');
     $('.fixedLsit2 li').eq(fixedLsit2Index).find('span').slideUp(function(){

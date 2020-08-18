@@ -48,6 +48,13 @@ task('html', async ()=>{
   },2000);
 })
 
+// 处理data
+task('data', async ()=>{
+  src('./data/*.*')
+  .pipe(dest('./dist/data'))
+  .pipe(load.connect.reload())
+})
+
 // 监听文件变化
 // task('watch',async ()=>{
 //   watch('./img/*.*',series('image'));
@@ -66,4 +73,4 @@ task('connect',async ()=>{
 })
 
 // 构建生产包
-task('build',series('delDist','image','style','script','html','connect'))
+task('build',series('delDist','image','style','script','html','data','connect'))
