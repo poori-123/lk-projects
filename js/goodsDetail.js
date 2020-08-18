@@ -29,7 +29,7 @@ $('.footer').load('./footer.html');
         index --;
         $ul.find('li').eq(index).addClass('on');
         changeimg();
-        $lion = $ul.find('.on');
+        var $lion = $ul.find('.on');
         var width = $lion[0].offsetWidth + parseInt($lion.css('margin-right'));
         if($lion[0].offsetLeft < $scroll.scrollLeft()){
             var n = $lion[0].offsetLeft / width;
@@ -44,7 +44,7 @@ $('.footer').load('./footer.html');
         index ++;
         $ul.find('li').eq(index).addClass('on');
         changeimg();
-        $lion = $ul.find('.on');
+        var $lion = $ul.find('.on');
         var width = $lion[0].offsetWidth + parseInt($lion.css('margin-right'));
         if($lion[0].offsetLeft >= $scroll[0].offsetWidth){
             var n = Math.ceil(($lion[0].offsetLeft - $scroll[0].offsetWidth) / width);
