@@ -36,7 +36,7 @@
           line-height: 36px;
           display: block;
           color: #afafaf; }
-      .navWrap .nav-right span {
+      .navWrap .nav-right > span {
         float: left;
         width: 1px;
         height: 10px;
@@ -165,22 +165,133 @@
           color: #cb242b; }
         .navWrap .nav .cart:hover ul {
           display: block; }
-      .navWrap .nav .cart ul {
+      .navWrap .nav .cart > ul {
         width: 460px;
         right: 0;
-        padding-bottom: 30px; }
-        .navWrap .nav .cart ul .empty {
+        padding: 0; }
+        .navWrap .nav .cart > ul .empty {
           width: 100%;
           height: 150px;
-          padding-top: 50px; }
-          .navWrap .nav .cart ul .empty img {
+          padding-top: 50px;
+          padding-bottom: 30px; }
+          .navWrap .nav .cart > ul .empty img {
             display: block;
             margin: 0 auto; }
-          .navWrap .nav .cart ul .empty p {
+          .navWrap .nav .cart > ul .empty p {
             font-size: 12px;
             text-align: center;
             line-height: 50px;
             color: #a4a4a4; }
+        .navWrap .nav .cart > ul .goodmsg {
+          width: 100%;
+          overflow: hidden; }
+          .navWrap .nav .cart > ul .goodmsg ul {
+            max-height: 426px;
+            overflow: auto; }
+            .navWrap .nav .cart > ul .goodmsg ul li {
+              border-bottom: 1px solid #eeeeee;
+              height: 121px;
+              overflow: hidden;
+              padding: 20px 0 0 24px;
+              position: relative; }
+              .navWrap .nav .cart > ul .goodmsg ul li > strong {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                font-size: 14px;
+                text-align: center;
+                cursor: pointer;
+                color: #333;
+                border-radius: 50%; }
+                .navWrap .nav .cart > ul .goodmsg ul li > strong:hover {
+                  color: #ca141d; }
+              .navWrap .nav .cart > ul .goodmsg ul li div {
+                overflow: hidden; }
+                .navWrap .nav .cart > ul .goodmsg ul li div h5 {
+                  float: left; }
+                  .navWrap .nav .cart > ul .goodmsg ul li div h5 i {
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    border: 1px solid #989898;
+                    border-radius: 50%;
+                    background: #fff;
+                    margin-top: 23px;
+                    margin-right: 16px;
+                    cursor: pointer; }
+                  .navWrap .nav .cart > ul .goodmsg ul li div h5 .on {
+                    border-color: #ca141d;
+                    background: #ca141d url(../img/mycarticon1.png) no-repeat center; }
+                .navWrap .nav .cart > ul .goodmsg ul li div img {
+                  width: 64px;
+                  height: 64px;
+                  float: left; }
+                .navWrap .nav .cart > ul .goodmsg ul li div a {
+                  float: left;
+                  font-size: 13px;
+                  line-height: 22px;
+                  color: #333;
+                  text-indent: 10px;
+                  width: 300px;
+                  cursor: pointer;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap; }
+                  .navWrap .nav .cart > ul .goodmsg ul li div a:hover {
+                    color: #ca141d; }
+                .navWrap .nav .cart > ul .goodmsg ul li div h6 {
+                  margin-top: 16px;
+                  float: left;
+                  font-size: 14px;
+                  line-height: 26px;
+                  color: #333;
+                  width: 300px;
+                  text-align: right; }
+              .navWrap .nav .cart > ul .goodmsg ul li > h5 {
+                margin-top: 30px;
+                line-height: 17px;
+                font-size: 12px;
+                color: #333; }
+                .navWrap .nav .cart > ul .goodmsg ul li > h5 em {
+                  display: inline-block;
+                  width: 42px;
+                  height: 17px;
+                  color: #fff;
+                  border-radius: 2px;
+                  text-align: center;
+                  background: #ca141d;
+                  margin-right: 10px; }
+          .navWrap .nav .cart > ul .goodmsg .cart-bot {
+            overflow: hidden;
+            background: #f0f0f0; }
+            .navWrap .nav .cart > ul .goodmsg .cart-bot-left {
+              float: left;
+              margin-left: 25px;
+              padding-top: 8px; }
+              .navWrap .nav .cart > ul .goodmsg .cart-bot-left h5 {
+                font-size: 12px;
+                line-height: 17px;
+                color: #888888; }
+              .navWrap .nav .cart > ul .goodmsg .cart-bot-left h6 {
+                font-size: 18px;
+                line-height: 25px;
+                color: #ca141d;
+                font-weight: bold; }
+            .navWrap .nav .cart > ul .goodmsg .cart-bot-right {
+              float: right;
+              width: 150px;
+              height: 40px;
+              background: #ca151e;
+              border-radius: 2px;
+              margin: 10px 20px 10px 0;
+              font-size: 16px;
+              text-align: center;
+              color: #fff;
+              line-height: 40px;
+              cursor: pointer; }
 
 .searchWrap {
   width: 1200px;

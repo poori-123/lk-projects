@@ -380,6 +380,7 @@
                 display: none;
                 .mask{
                     display: block;
+                    cursor: not-allowed;
                 }
             }
         }
@@ -425,6 +426,7 @@
     }
 }
 
+
 /* cartMask */
 .cartMask{
     width: 100%;
@@ -437,7 +439,7 @@
     background: rgba(0,0,0,0.3);
     display: none;
     .box{
-        position: absolute;
+        position: fixed;
         width: 373px;
         top: 380px;
         left: 50%;
@@ -450,6 +452,7 @@
             color: #333;
             padding-left: 37px;
             background: url(../img/addcart.png) no-repeat left top;
+            word-break: break-all;
         }
         i{
             display: block;

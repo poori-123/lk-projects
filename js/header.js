@@ -49,10 +49,60 @@
     var username = getCookie('username');
     var $cart =  $('.nav-right .cart');
     var userGoods = JSON.parse(localStorage.getItem(username + 'goods'));
-    if(userGoods){
-        $cart.find('i').text(Object.keys(userGoods).length);
+    if(userGoods && Object.keys(userGoods).length != 0 ){
+        $cart.find('.num').text(Object.keys(userGoods).length);
         $cart.find('.empty').css('display','none');
-    }
+        $cart.find('.goodmsg').css('display','block');
+        var $lis = '';
+        for(var index in userGoods){
+            var code = index.slice(0,index.length-3);
+            var type = code.slice(0,code.length-2);
+            if(type == 'phone'){
+                type = 'mobilephone';
+            };
+            $lis += `<li code="${index}">
+                        <div>   
+                            <h5><i class="on"></i></h5>
+                            <img src="${userGoods[index].goodssrc}" alt="">
+                            <a href="./goodsDetail.html?type=${type}&code=${code}" target="_blank" title="${userGoods[index].goodsname}">${userGoods[index].goodsname}</a>
+                            <h6>￥<span>${userGoods[index].price}</span> x <b>${userGoods[index].num}</b></h6>
+                        </div>
+                        <h5><em>配</em>华为AM115半入耳式耳机（白色）x1</h5>
+                        <strong>X</strong>
+                    </li>`;
+        };
+        $cart.find('.goodmsg ul').html($lis);
+        priceAll();
+    }else{
+        $cart.find('.empty').css('display','block');
+        $cart.find('.goodmsg').css('display','none');
+    };
+    $cart.on('click','.goodmsg ul h5 i',function(){
+        $(this).toggleClass('on');
+        priceAll();
+    });
+    $cart.on('click','.goodmsg ul strong',function(){
+        var code = $(this).parent().attr('code');
+        delete userGoods[code];
+        $cart.find('.num').text(Object.keys(userGoods).length);
+        var goodString = JSON.stringify(userGoods);
+        localStorage.setItem(username + 'goods' , goodString);
+        $(this).parent().remove();
+        if(Object.keys(userGoods).length == 0){
+            $cart.find('.empty').css('display','block');
+            $cart.find('.goodmsg').css('display','none');
+        }
+        priceAll();
+    });
+    function priceAll(){
+        var price = 0;
+        $('.nav-right .cart .goodmsg ul i').each(function(index,item){
+            if($(item).hasClass('on')){
+                price += Number($(item).parent().siblings('h6').find('span').text()) * Number($(item).parent().siblings('h6').find('b').text());
+            };
+        });
+        $cart.find('.cart-bot span').text(price);
+    };
     
 })();
     

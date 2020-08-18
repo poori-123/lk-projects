@@ -307,7 +307,8 @@
         background: #ca141d;
         display: none; }
         .content-main-right .num .nomore .mask {
-          display: block; }
+          display: block;
+          cursor: not-allowed; }
 
 .hr {
   width: 100%;
@@ -355,7 +356,7 @@
   background: rgba(0, 0, 0, 0.3);
   display: none; }
   .cartMask .box {
-    position: absolute;
+    position: fixed;
     width: 373px;
     top: 380px;
     left: 50%;
@@ -367,7 +368,8 @@
       line-height: 30px;
       color: #333;
       padding-left: 37px;
-      background: url(../img/addcart.png) no-repeat left top; }
+      background: url(../img/addcart.png) no-repeat left top;
+      word-break: break-all; }
     .cartMask .box i {
       display: block;
       margin: 16px auto 0;

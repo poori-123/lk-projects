@@ -87,7 +87,8 @@ $('.footer').load('./footer.html');
             } ;
             $ul.append($lis);
             $ul.find('li').eq(0).addClass('on');
-            $('.content-main-right h2').text(data.name);
+
+            $('.content-main-right h2').attr('gName',data.name);
             $('.content-main-right .price').find('span').text(data.price);
             var bs = '';
             data.discounts.forEach(function(item){
@@ -120,6 +121,7 @@ $('.footer').load('./footer.html');
                 $('.content-main-right .num .add').css({'color':'#d6d6d6','cursor':'not-allowed'});
             };
             choosedDate();
+            choosedName();
         }
     });
     /* 设置 + - 点击事件 */
@@ -162,6 +164,7 @@ $('.footer').load('./footer.html');
         $(this).siblings().removeClass('on');
         $(this).addClass('on');
         choosedDate();
+        choosedName();
     });
     function choosedDate(){
         $ons = $('.content-main-right .choose .on');
@@ -172,6 +175,10 @@ $('.footer').load('./footer.html');
         emStr = emStr.slice(0,emStr.length-2);
         $('.content-main-right .choosed div').html(emStr);
     };
+    function  choosedName(){
+        var choosedName = $('.content-main-right h2').attr('gName') + ' ' + $('.content-main-right .choose .vision .on').text() + ' (' + $('.content-main-right .choose .color .on').text() + ') (' + $('.content-main-right .choose .combo .on').text() + ')';
+        $('.content-main-right h2').text(choosedName);
+    }
 })();
 
 /* 加入购物车 */
@@ -187,16 +194,29 @@ $('.footer').load('./footer.html');
         var username = getCookie('username');
         var code = $('.content-main-right .code strong').text();
         var num = $('.content-main .num .count').text();
+        var color = $('.content-main .choose .color .on').index();
+        var vision = $('.content-main .choose .vision .on').index();
+        var combo = $('.content-main .choose .combo .on').index();
+        codeNow = code + color + vision + combo;
+        var price = $('.content-main .price span').text();
+        var goodsname =  $('.content-main-right h2').text();
+        var goodssrc = $('.content-main .choose .color .on img').attr('src');
         var userGoods = JSON.parse(localStorage.getItem(username + 'goods')) || {};
-        if(userGoods[code]){
-            userGoods[code] = parseInt(userGoods[code]) + parseInt(num);
+        if(userGoods[codeNow]){
+            userGoods[codeNow].num = parseInt(userGoods[codeNow].num) + parseInt(num);
         }else{
-            userGoods[code] = num;
+            userGoods[codeNow] = {
+                "goodsname" : goodsname,
+                "price" : price,
+                "goodssrc" : goodssrc,
+                "num":num
+            };
         };
         var userGoodsStr = JSON.stringify(userGoods);
         localStorage.setItem(username + 'goods' , userGoodsStr);
         $mask.css('display','block');
-        $mask.find('p').text($('.content-nav .name').find('p').text() +'成功加入购物车！');
+        $mask.find('p').text(goodsname +'  成功加入购物车！');
+        $mask.css('height',document.documentElement.offsetHeight);
     });
     $mask.find('i').click(function(){
         $mask.css('display','none');

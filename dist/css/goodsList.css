@@ -169,6 +169,7 @@
           .content-goodsList ul li a p {
             position: absolute;
             top: 0;
+            left: 0;
             text-align: center;
             width: 100%; }
             .content-goodsList ul li a p span {
