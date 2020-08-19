@@ -3,6 +3,7 @@
     background: #f2f2f2;
     // border-top: 1px solid #dadce0;
     overflow: hidden;
+    min-width: 850px;
     .head{
         max-width: 1200px;
         line-height: 48px;
@@ -33,6 +34,7 @@
 /* content */
 .content{
     width: 100%;
+    min-width: 850px;
     position: relative;
     overflow: hidden;
     &-top{
@@ -222,6 +224,7 @@
 /* register */
 .registerWrap{ 
     width: 100%;
+    min-width: 850px;
     min-height: 779px;
     display: none;
     .register{
@@ -314,6 +317,7 @@
 /* footer */
 .footer{
     width: 100%;
+    min-width: 850px;
     background: #f2f2f2;
     padding-top: 36px;
     padding-bottom: 24px;
