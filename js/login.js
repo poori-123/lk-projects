@@ -34,7 +34,7 @@ var $change = $('.content-bot-right .change span');
 var $loginBtn = $('.content-bot-right .loginBtn');
 var $loginMask = $('.content-bot-right .mask');
 $username.focus(function(){
-    if($(this).attr('state')){
+    if($(this).attr('state') == 'true'){
         $(this).css('border-color','#007DFF');
     }
 });
@@ -52,7 +52,7 @@ $username.blur(function(){
     };
 });
 $userpsd.focus(function(){
-    if($(this).attr('state')){
+    if($(this).attr('state') == 'true'){
         $(this).css('border-color','#007DFF');
     }
 });
@@ -259,7 +259,7 @@ $regPhone.focus(function(){
     }
 });
 $regPhone.blur(function(){
-    $this = $(this);
+    var $this = $(this);
     var reg = /^(1|\+861)[3-8]{1}\d{9}$/;
     if(!reg.test($this.val())){
         $(this).siblings('i').css('display','block');
